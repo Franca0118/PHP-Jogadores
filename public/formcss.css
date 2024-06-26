@@ -27,7 +27,9 @@ h2 {
     color: white;
     margin-bottom: 5vh;
 }
-
+#minhaDiv{
+    animation: esquerda_pra_direita .5s;
+}
 #minhaDiv form {
     display: flex;
     margin-top: 60px;
@@ -100,3 +102,10 @@ form button:hover {
     color: rgb(255, 255, 255);
     font-size: 12px;
 }
+
+
+
+@keyframes esquerda_pra_direita {
+    from {margin-left: -100vw;}
+    to {margin-left: 0vw;}
+  }

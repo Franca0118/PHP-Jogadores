@@ -8,7 +8,7 @@
     <link rel="icon" href="https://imagepng.org/bola/bola/">
 </head>
 <body>
-    <a href="/cadastro"><button>Cadastrar novos jogadores</button></a>
-    <a href="/vizualizar?valorPag=0"><button>Vizualizar Lista de jogadores</button></a>
+    <a href="/cadastro" id='botao01'><button>Cadastrar novos jogadores</button></a>
+    <a href="/vizualizar?valorPag=0" id='botao02'><button>Vizualizar Lista de jogadores</button></a>
 </body>
 </html>

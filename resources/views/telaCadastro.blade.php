@@ -23,7 +23,7 @@
             <label for="nacionalidadeJogador" class="placeholder">Nacionalidade</label>
         </span>
         <span class="grupoInput">
-            <input type="number" name="numCamisaJogador" id="numCamisaJogador" class="input" requiredv>
+            <input type="number" name="numCamisaJogador" id="numCamisaJogador" class="input" required>
             <label for="numCamisaJogador" class="placeholder">Numero da camisa</label>
         </span>
         <span class="grupoInput">

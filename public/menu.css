@@ -1,7 +1,6 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -24,11 +23,13 @@ body {
     background-repeat: no-repeat;
     overflow: hidden;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 button {
-    display: block;
+    
     padding: 10px;
     margin: 10px;
     width: 500px;
@@ -66,11 +67,41 @@ button:hover {
 
 
 @media (max-width: 576px) {
-   
-    
+
+
     button {
         width: 250px;
         height: 70px;
         font-size: 24px;
     }
 }
+
+#botao01 {
+    animation: esquerda_pra_direita .8s;
+}
+
+#botao02
+{
+    animation:direira_pra_esquerda .8s ;
+}
+
+@keyframes esquerda_pra_direita {
+    from {
+        margin-left: -100vw;
+    }
+
+    to {
+        margin-left: 0vw;
+    }
+}
+
+@keyframes direira_pra_esquerda {
+    from {
+        margin-right: -100vw;
+    }
+
+    to {
+        margin-right: 0vw;
+    }
+}
+
