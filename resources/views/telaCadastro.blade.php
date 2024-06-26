@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="formcss.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" href="https://imagepng.org/bola/bola/">
 </head>
 <body id="meuBody">
@@ -58,33 +57,21 @@
 
         document.querySelector("#meuForms").addEventListener('submit',async (envento)=>{
         event.preventDefault();
-        await Swal.fire({
-            title: "Tudo certo para criar o novo jogador, confira as informacoes",
-            html: `Nome: ${nome.value} <br>`+
-            `Nacionalidade: ${Nacionalidade.value} <br>`+
-            `Numero: ${Numero.value} <br>`+
-            `Time: ${Time.value} <br>`+
-            `cartoes: ${cartoes.value} <br>`+
-            `lesoes: ${lesoes.value} <br>`,
-            icon: "success",
-            showCancelButton: true,
-            confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "CRIAR"
-          }).then((result) => {
-            if (result.isConfirmed) {
+
+        var alertDeConfirmacao = confirm(`Voce vai criar o seguinte jogador: \n`+
+        `Nome: ${nome.value}\n`+
+        `Nacionalidade: ${Nacionalidade.value}\n`+
+        `Numero: ${Numero.value}\n`+
+        `Time: ${Time.value}\n`+
+        `cartoes: ${cartoes.value}\n`+
+        `lesoes: ${lesoes.value}\n`
+        );
+        if(alertDeConfirmacao){
             document.querySelector("#meuForms").submit()
-            }
-          });
+        }else{
+  	        
+        }
     })
-
-       
-        
-
-
-
-
-        
     </script>
 </body>
 </html>

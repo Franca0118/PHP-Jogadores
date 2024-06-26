@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vizualizacao</title>
     <link rel="stylesheet" href="table.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" href="https://imagepng.org/bola/bola/">
 </head>
 <body>
@@ -87,7 +86,7 @@
         <div class="botões">
             <a href="?valorPag=<?=0?>"><button> << </button></a>
             <a href="?valorPag=<?=tratamentoDeNegativo() - 10?>"><button> < </button></a>
-            <h3> <?=$ListaVar?> </h3>
+            <h3> <?=$ListaVar/10?> </h3>
             <a href="?valorPag=<?=$ListaVar + 10?>"><button> > </button></a>
             <a href="?valorPag=<?=count($valorTela)-10?>"><button> >> </button></a>
         </div> 
@@ -100,19 +99,12 @@
         
         document.querySelectorAll(".buttonDelete").forEach((botao)=>{
         botao.addEventListener('click', ()=>{
-        Swal.fire({
-            title: "Tem certeza?",
-            text: "O jogador vai ser apagado!",
-            icon: "warning",
-            showCancelButton: true,
-            confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "Sim"
-          }).then((result) => {
-            if (result.isConfirmed) {
-              window.location.href = botao.id
-            }
-          });
+        var alertDeConfirmacao = confirm('O jogador vai ser deletado');
+        if(alertDeConfirmacao){
+            window.location.href = botao.id
+        }else{
+  	        //
+        }
     })
 })
 
