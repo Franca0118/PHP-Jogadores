@@ -1,6 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -27,9 +27,11 @@ h2 {
     color: white;
     margin-bottom: 5vh;
 }
-#minhaDiv{
+
+#minhaDiv {
     animation: esquerda_pra_direita .5s;
 }
+
 #minhaDiv form {
     display: flex;
     margin-top: 60px;
@@ -52,7 +54,7 @@ h2 {
 }
 
 #minhaDiv label {
-    margin-right: 10px; 
+    margin-right: 10px;
     font-weight: bold;
     min-width: 100px;
     color: white;
@@ -86,7 +88,7 @@ form button:hover {
     max-width: 100%;
     box-sizing: border-box;
     outline: none;
-    flex: 1; 
+    flex: 1;
     padding: 8px;
     font-size: 14px;
     border: 1px solid black;
@@ -96,7 +98,7 @@ form button:hover {
 
 .placeholder {
     position: absolute;
-    left: 8px; 
+    left: 8px;
     padding: 0px 5px;
     top: -20px;
     color: rgb(255, 255, 255);
@@ -106,6 +108,11 @@ form button:hover {
 
 
 @keyframes esquerda_pra_direita {
-    from {margin-left: -100vw;}
-    to {margin-left: 0vw;}
-  }
+    from {
+        margin-left: -100vw;
+    }
+
+    to {
+        margin-left: 0vw;
+    }
+}

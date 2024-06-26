@@ -29,7 +29,7 @@ a {
 }
 
 button {
-    
+
     padding: 10px;
     margin: 10px;
     width: 500px;
@@ -80,9 +80,8 @@ button:hover {
     animation: esquerda_pra_direita .8s;
 }
 
-#botao02
-{
-    animation:direira_pra_esquerda .8s ;
+#botao02 {
+    animation: direira_pra_esquerda .8s;
 }
 
 @keyframes esquerda_pra_direita {
@@ -104,4 +103,3 @@ button:hover {
         margin-right: 0vw;
     }
 }
-
