@@ -16,28 +16,30 @@
             @csrf
             <h2>CRIAR JOGADOR</h2>
             <span class="grupoInput">
-                <input type="text" name="nomeJogador" id="nomeJogador" class="input" required>
                 <label for="nomeJogador" class="placeholder">Nome do jogador</label>
+                <input type="text" name="nomeJogador" id="nomeJogador" class="input" required>
             </span>
             <span class="grupoInput">
-                <input type="text" name="nacionalidadeJogador" id="nascionalidadeJogador" class="input" required>
                 <label for="nacionalidadeJogador" class="placeholder">Nacionalidade</label>
+                <input type="text" name="nacionalidadeJogador" id="nascionalidadeJogador" class="input" required>   
             </span>
             <span class="grupoInput">
-                <input type="number" name="numCamisaJogador" id="numCamisaJogador" class="input" required>
                 <label for="numCamisaJogador" class="placeholder">Numero da camisa</label>
+                <input type="number" name="numCamisaJogador" id="numCamisaJogador" class="input" required>
+                
             </span>
             <span class="grupoInput">
-                <input type="text" name="timeJogador" id="timeJogador" class="input" required>
                 <label for="timeJogador" class="placeholder">Time do jogador</label>
+                <input type="text" name="timeJogador" id="timeJogador" class="input" required>
+                
             </span>
             <span class="grupoInput">
-                <input type="number" name="cartoesVermelhosJogador" id="cartoesVermelhosJogador" class="input" required>
                 <label for="cartoesVermelhosJogador" class="placeholder">Numero de cartoes vermelhos</label>
+                <input type="number" name="cartoesVermelhosJogador" id="cartoesVermelhosJogador" class="input" required> 
             </span>
             <span class="grupoInput">
-                <input type="number" name="lesoesJogador" id="lesoesJogador" class="input" required>
                 <label for="lesoesJogador" class="placeholder">Numero de lesoes do jogador</label>
+                <input type="number" name="lesoesJogador" id="lesoesJogador" class="input" required> 
             </span>
             <Button id="btnSubimmit">Criar</Button>
         </form>

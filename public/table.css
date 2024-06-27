@@ -30,22 +30,31 @@ body {
     width: 85%;
     height: 80vh;
     background: white;
-    position: relative;
     box-shadow: 10px 10px 10px;
     border: 1px solid #9B2756;
     border-radius: 20px;
+    overflow-Y: scroll;
+    padding: 30px;
+    overflow-x: hidden;
     
     
 
 }
+.tudo::-webkit-scrollbar{
+    background: transparent;
+}
 
+.tudo::-webkit-scrollbar-thumb{
+    background: #9B2756;
+    border-radius: 10px;
+}
 
 
 #tablePricipal {
-    border-collapse: collapse;
+    width: 50%;
+    border-collapse:collapse;
     box-shadow: 10px 10px 10px;
-    border-radius: 20px;
-    margin-left: 50%; transform: translate(-50%);
+   
     
 }
 
@@ -69,6 +78,9 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 button {
@@ -89,15 +101,17 @@ button img{
     top: 10px;
     left: 10px;
 }
+
+
 @media (max-width: 1200px) {
-    table {
-        width: 90%;
+    .tudo {
+        overflow-x: scroll;
     }
 }
-
 @media (max-width: 768px) {
-    table {
-        width: 100%;
+
+    .tudo {
+        overflow-x: scroll;
     }
     p {
         right: 20px;
@@ -112,10 +126,6 @@ button img{
 }
 
 @media (max-width: 576px) {
-    table {
-        width: 100%;
-        font-size: 14px;
-    }
     p {
         top: 20px;
         right: 10px;

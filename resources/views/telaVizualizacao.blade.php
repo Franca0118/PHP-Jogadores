@@ -23,10 +23,10 @@
                 <td>numLesoesJogador</td>
             </tr>
 
-            <?php 
+<?php 
            
-           $ListaVar = 0;
-$ValorNegativo = 0;
+$ListaVar = 0;
+
 try {
     $ListaVar = $_GET['valorPag'];
     if ($ListaVar < 0) {
@@ -39,20 +39,7 @@ try {
 }
 
 
-function tratamentoDeNegativo()
-{
-    try {
-        $ListaVar = $_GET['valorPag'] ?? 0;
-    } catch (Exception $e) {
-        // nada
-    }
-    if ($ListaVar < 0) {
-        $ValorNegativo = 0;
-    } else {
-        $ValorNegativo = $ListaVar - 1;
-    }
-    return $ValorNegativo;
-}
+
 
 
            ?>
@@ -82,20 +69,20 @@ function tratamentoDeNegativo()
 
         </table>
 
-        <div class="botões">
+        
+
+    </div>
+    <div class="botões">
             <a href="?valorPag=<?=0?>"><button>
                     << </button></a>
-            <a href="?valorPag=<?=tratamentoDeNegativo() - 10?>"><button>
+            <a href="?valorPag=<?=$ListaVar - 10?>"><button>
                     < </button></a>
             <h3>
                 <?=$ListaVar/10?>
             </h3>
             <a href="?valorPag=<?=$ListaVar + 10?>"><button> > </button></a>
-            <a href="?valorPag=<?=count($valorTela)-10?>"><button> >> </button></a>
+            <a href="?valorPag=<?=strval(count($valorTela))[0] * 10 ?>"><button> >> </button></a>
         </div>
-
-
-    </div>
 
     <script>
 

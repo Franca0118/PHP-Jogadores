@@ -17,36 +17,38 @@
 
 
             <span class="grupoInput">
+            <label for="id" class="placeholder">Id do jogador</label>
                 <input type="text" name="id" id="id" class="input" value="<?=$jogador->id?>" readonly>
-                <label for="id" class="placeholder">Id do jogador</label>
+                
             </span>
             <span class="grupoInput">
-                <input type="text" name="nomeJogador" id="nomeJogador" class="input" value="<?=$jogador->nomeJogador?>" required>
                 <label for="nomeJogador" class="placeholder">Nome do jogador</label>
+                <input type="text" name="nomeJogador" id="nomeJogador" class="input" value="<?=$jogador->nomeJogador?>" required>
+                
             </span>
             <span class="grupoInput">
+                <label for="nacionalidadeJogador" class="placeholder">Nacionalidade</label>
                 <input type="text" name="nascionalidadeJogador" id="nascionalidadeJogador" class="input"
                     value="<?=$jogador->nacionalidadeJogador?>" required>
-                <label for="nacionalidadeJogador" class="placeholder">Nacionalidade</label>
             </span>
             <span class="grupoInput">
+                <label for="numCamisaJogador" class="placeholder">Numero da camisa</label>
                 <input type="text" name="numCamisaJogador" id="numCamisaJogador" class="input"
                     value="<?=$jogador->numCamisaJogador?>" required>
-                <label for="numCamisaJogador" class="placeholder">Numero da camisa</label>
             </span>
             <span class="grupoInput">
-                <input type="text" name="timeJogador" id="timeJogador" class="input" value="<?=$jogador->timeJogador?>" required>
                 <label for="timeJogador" class="placeholder">Time do jogador</label>
+                <input type="text" name="timeJogador" id="timeJogador" class="input" value="<?=$jogador->timeJogador?>" required>
             </span>
             <span class="grupoInput">
+                <label for="cartoesVermelhosJogador" class="placeholder">Numero de cartoes vermelhos</label>
                 <input type="text" name="cartoesVermelhosJogador" id="cartoesVermelhosJogador" class="input"
                     value="<?=$jogador->numCartoesJogador?>" required>
-                <label for="cartoesVermelhosJogador" class="placeholder">Numero de cartoes vermelhos</label>
             </span>
             <span class="grupoInput">
+                <label for="lesoesJogador" class="placeholder">Numero de lesoes do jogador</label>
                 <input type="text" name="lesoesJogador" id="lesoesJogador" class="input"
                     value="<?=$jogador->numLesoesJogador?>" required>
-                <label for="lesoesJogador" class="placeholder">Numero de lesoes do jogador</label>
             </span>
 
 

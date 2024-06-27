@@ -6,6 +6,7 @@
     font-weight: 500;
     font-style: normal;
     box-sizing: border-box;
+    color: black;
 
 }
 
@@ -19,12 +20,12 @@
     background-size: cover;
     height: 100vh;
     margin: 0;
+
 }
 
 h2 {
     text-align: center;
     font-style: italic;
-    color: white;
     margin-bottom: 5vh;
 }
 
@@ -38,12 +39,13 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 500px;
-    height: 550px;
-    backdrop-filter: blur(10px);
+    width: 70vw;
+    height: 90vh;
     border: solid 1px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px;
+    padding: 20px;
+    background: white;
 }
 
 #minhaDiv span {
@@ -57,7 +59,6 @@ h2 {
     margin-right: 10px;
     font-weight: bold;
     min-width: 100px;
-    color: white;
 }
 
 #minhaDiv button {
@@ -84,8 +85,8 @@ form button:hover {
 
 .input {
     padding: 10px;
-    width: 100%;
-    max-width: 100%;
+    width: 20vw;
+    height: 5vh;
     box-sizing: border-box;
     outline: none;
     flex: 1;
@@ -97,12 +98,11 @@ form button:hover {
 }
 
 .placeholder {
-    position: absolute;
+    width: 30%;
     left: 8px;
     padding: 0px 5px;
     top: -20px;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
+    font-size: 2vw;
 }
 
 
@@ -116,3 +116,5 @@ form button:hover {
         margin-left: 0vw;
     }
 }
+
+
