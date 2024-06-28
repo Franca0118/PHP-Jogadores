@@ -15,12 +15,12 @@
         <table id="tablePricipal">
             <tr>
                 <td>Id</td>
-                <td>nomeJogador</td>
-                <td>nacionalidadeJogador</td>
-                <td>numCamisaJogador</td>
-                <td>timeJogador</td>
-                <td>numCartoesJogador</td>
-                <td>numLesoesJogador</td>
+                <td>Nome</td>
+                <td>Nacionalidade</td>
+                <td>Camisa</td>
+                <td>Time</td>
+                <td>Cartoes</td>
+                <td>Lesoes</td>
             </tr>
 
 <?php 

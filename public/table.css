@@ -19,7 +19,7 @@ body {
     align-items: center;
 
 
-    background-image: url(fundo.avif);
+    background-image: url(fundo2.jpg);
     background-position: center;
     background-size: cover;
     overflow: hidden    ;
@@ -29,29 +29,28 @@ body {
     margin-top: 7vh;
     width: 85%;
     height: 80vh;
-    background: white;
+    backdrop-filter: blur(20px);
     box-shadow: 10px 10px 10px;
-    border: 1px solid #9B2756;
+    border: 3px solid white;
     border-radius: 20px;
     overflow-Y: scroll;
     padding: 30px;
     overflow-x: hidden;
-    
-    
-
 }
 .tudo::-webkit-scrollbar{
     background: transparent;
 }
 
 .tudo::-webkit-scrollbar-thumb{
-    background: #9B2756;
+    background: green;
     border-radius: 10px;
 }
 
 
 #tablePricipal {
-    width: 50%;
+    
+    background: white;
+    width: 100%;
     border-collapse:collapse;
     box-shadow: 10px 10px 10px;
    
@@ -61,13 +60,20 @@ body {
  td {
     padding: 8px;
     text-align: center;
-    border: 2px solid #9B2756;
+    border: 2px solid green;
     border-radius: 30px;
 }
 
 
 
-
+.botões button{
+    width: 3vw;
+    height: 3vh;
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: white;
+}
 
 
 .botões {
@@ -81,11 +87,12 @@ body {
     background: white;
     padding: 10px;
     border-radius: 10px;
+    width: calc(auto + 10vw);
 }
 
-button {
+.tudo button {
     margin-left: 10px;
-    background-color: black;
+    background-color: white   ;
     border: none;
     color: white;
     border-radius: 20px;
@@ -100,6 +107,14 @@ button img{
     position: absolute;
     top: 10px;
     left: 10px;
+}
+#meusBotoesNoCanto button{
+    background: black;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+ 
 }
 
 
@@ -120,9 +135,7 @@ button img{
     .icones {
         left: 85%;
     }
-    .botões {
-        right: 30%;
-    }
+    
 }
 
 @media (max-width: 576px) {
@@ -135,10 +148,7 @@ button img{
         top: 30%;
         left: 80%;
     }
-    .botões {
-        bottom: 5%;
-        right: 20%;
-    }
+   
     th, td {
         padding: 4px;
     }
