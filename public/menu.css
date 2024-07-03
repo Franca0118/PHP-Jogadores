@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url(fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    box-shadow: 5px 5px 8px black;
+}
+
+button:hover {
+    background-color: gray;
+    transition: 0.2s;
+}
+
+
+@media (max-width: 1200px) {
+    button {
+        width: 400px;
+        height: 90px;
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    button {
+        width: 300px;
+        height: 80px;
+        font-size: 26px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+
+    button {
+        width: 250px;
+        height: 70px;
+        font-size: 24px;
+    }
+}
+
+#botao01 {
+    animation: esquerda_pra_direita .8s;
+}
+
+#botao02 {
+    animation: direira_pra_esquerda .8s;
+}
+
+@keyframes esquerda_pra_direita {
+    from {
+        margin-left: -100vw;
+    }
+
+    to {
+        margin-left: 0vw;
+    }
+}
+
+@keyframes direira_pra_esquerda {
+    from {
+        margin-right: -100vw;
+    }
+
+    to {
+        margin-right: 0vw;
+    }
+}

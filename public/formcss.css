@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    box-sizing: border-box;
+    
+
+}
+
+
+#meuBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(fundoTela.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    color: whit;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 5vh;
+}
+
+#minhaDiv {
+    animation: esquerda_pra_direita .5s;
+}
+
+#minhaDiv form {
+    display: flex;
+    backdrop-filter: blur(20px);
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    height: 90vh;
+    border: solid 1px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+    padding: 20px;
+    color: white;
+    /* background: white; */
+}
+
+#minhaDiv span {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 15px;
+}
+
+#minhaDiv label {
+    margin-right: 10px;
+    font-weight: bold;
+    min-width: 100px;
+}
+
+#minhaDiv button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+}
+
+form button:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+
+.grupoInput {
+    position: relative;
+    width: 90%;
+}
+
+.input {
+    padding: 10px;
+    width: 20vw;
+    height: 5vh;
+    box-sizing: border-box;
+    outline: none;
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.placeholder {
+    width: 30%;
+    left: 8px;
+    padding: 0px 5px;
+    top: -20px;
+    font-size: 1.5vw;
+}
+
+
+
+@keyframes esquerda_pra_direita {
+    from {
+        margin-left: -100vw;
+    }
+
+    to {
+        margin-left: 0vw;
+    }
+}
+
+

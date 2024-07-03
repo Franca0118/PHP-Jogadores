@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-image: url(fundo2.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden    ;
+}
+
+.tudo {
+    margin-top: 7vh;
+    width: 85%;
+    height: 80vh;
+    backdrop-filter: blur(20px);
+    box-shadow: 10px 10px 10px;
+    border: 3px solid white;
+    border-radius: 20px;
+    overflow-Y: scroll;
+    padding: 30px;
+    overflow-x: hidden;
+}
+.tudo::-webkit-scrollbar{
+    background: transparent;
+}
+
+.tudo::-webkit-scrollbar-thumb{
+    background: green;
+    border-radius: 10px;
+}
+
+
+#tablePricipal {
+    
+    background: white;
+    width: 100%;
+    border-collapse:collapse;
+    box-shadow: 10px 10px 10px;
+   
+    
+}
+
+ td {
+    padding: 8px;
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 30px;
+}
+
+
+
+.botões button{
+    width: 3vw;
+    height: 3vh;
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: white;
+}
+
+
+.botões {
+    position: absolute;
+    bottom: 0;
+    left: 50%; transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: calc(auto + 10vw);
+}
+
+.tudo button {
+    margin-left: 10px;
+    background-color: white   ;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+button img{
+    width: 30px;
+}
+
+#meusBotoesNoCanto{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#meusBotoesNoCanto button{
+    background: black;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+ 
+}
+
+
+@media (max-width: 1200px) {
+    .tudo {
+        overflow-x: scroll;
+    }
+}
+@media (max-width: 768px) {
+
+    .tudo {
+        overflow-x: scroll;
+    }
+    p {
+        right: 20px;
+        font-size: 18px;
+    }
+    .icones {
+        left: 85%;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    p {
+        top: 20px;
+        right: 10px;
+        font-size: 16px;
+    }
+    .icones {
+        top: 30%;
+        left: 80%;
+    }
+   
+    th, td {
+        padding: 4px;
+    }
+    button {
+        padding: 8px;
+    }
+}
